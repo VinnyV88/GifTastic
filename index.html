@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GifTastic</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex-container">
+        
+        <div class="row">   
+            <!-- this div will contain our dynamically created buttons -->
+            <div class="col-md-11 buttons margin-bottom-lg">
+            </div>
+        </div>
+        <div class="row">
+            <!-- this div will contain our dynamically created gif images -->
+            <div class="col-md-8 gifs">
+            </div>    
+            <div class="col-md-3">
+                <form id="sports-form">
+                    <div class="form-group">
+                        <label for="sports-input">Add a Sport, Team or Player</label>
+                        <input class="form-control" type="text" id="sports-input" placeholder="Sport, Team or Player">
+                    </div>
+                    <!-- Button triggers new sport, team/player to be added -->
+                    <button id="add-sports" type="submit" class="btn btn-primary">Submit</button>
+                </form>  
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
