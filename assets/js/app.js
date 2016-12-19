@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	var gifTastic = {
 		topics: [],
+		
 		initialTopics: function() {
 
 			this.topics = ["Game of Thrones", "30 Rock", "Seinfeld", "Breaking Bad", "Lost", "Chuck", "Married With Children", "Curb Your Enthusiasm",
