@@ -4,15 +4,15 @@ $(document).ready(function() {
 		topics: [],
 		initialTopics: function() {
 
-			this.topics = ["Hockey", "New York Islanders", "Denis Potvin", "Clark Gillies", "Billy Smith", "Bryan Trottier", "Mike Bossy", "Butch Goring", "Pierre Turgeon",
-							"Ziggy Palffy", "John Tavares", "Football", "New York Jets", "Joe Namath", "Mark Gastineau", "Baseball", "New York Mets", "Keith Hernandez", 
-							"Gary Carter", "Dwight Gooden", "Daryl Strawberry", "Lenny Dykstra", "Mookie Wilson", "Soccer", "Liverpool FC"]
+			this.topics = ["Game of Thrones", "30 Rock", "Seinfeld", "Breaking Bad", "Lost", "Chuck", "Married With Children", "Curb Your Enthusiasm",
+							"The Sopranos", "Modern Family", "The Wire", "Entourage", "Parks and Recreation", "The Office", "Michael Scott", "Ron Swanson", 
+							"The King of Queens", "Alf", "Wonder Years", "24", "Alias", "South Park", "The Simpsons"]
 
 		}, // end initialTopics
 
 		addTopic: function() {
 
-			var topic = $("#sports-input").val().trim();
+			var topic = $("#tv-input").val().trim();
 
 	        this.topics.push(topic);
 
@@ -84,12 +84,12 @@ $(document).ready(function() {
 
 	}); // end topic click 
 
-	$(document).on("click", "#add-sports", function(event) {
+	$(document).on("click", "#add-tv", function(event) {
         
         event.preventDefault();
 
         // This line of code will grab the input from the textbox
-        var newTopic = $("#sports-input").val().trim();
+        var newTopic = $("#tv-input").val().trim();
 
         if (newTopic.length === 0) {
 
@@ -102,6 +102,9 @@ $(document).ready(function() {
 			gifTastic.renderButtons();
 
         }
+
+        $("#tv-input").val("");
+
 
 	}); // end topic click 
 
